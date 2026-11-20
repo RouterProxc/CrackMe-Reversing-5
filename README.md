@@ -19,3 +19,5 @@
 После проверки на отладчик вырисовывается картина 
 
 <img width="603" height="301" alt="image" src="https://github.com/user-attachments/assets/4cf2e428-54f1-4fff-9ecc-fa83421dac68" />
+
+Дальше для удобства я открыл .data с расшифрованными функциями и сопоставил их в BinaryNinja по адресам и названиям
