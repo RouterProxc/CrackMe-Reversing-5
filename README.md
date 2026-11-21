@@ -21,3 +21,16 @@
 <img width="603" height="301" alt="image" src="https://github.com/user-attachments/assets/4cf2e428-54f1-4fff-9ecc-fa83421dac68" />
 
 Дальше для удобства я открыл .data с расшифрованными функциями и сопоставил их в BinaryNinja по адресам и названиям
+
+<img width="456" height="566" alt="image" src="https://github.com/user-attachments/assets/b7f5d4c6-b92f-404e-aef4-1ac0178754fa" />
+
+
+<img width="869" height="533" alt="image" src="https://github.com/user-attachments/assets/e4e1a897-401a-4fc1-83b4-478517906271" />
+
+Пройдемся по модулям защиты (функциям имеется ввиду)
+
+ExceptionBreakPoint:
+
+<img width="592" height="224" alt="image" src="https://github.com/user-attachments/assets/905c19f4-b6e3-469b-a977-229368c4c8c2" />
+
+~ Происходит установка байта отладки (0xCC - int 3). Если к программе присоединен отладчик - он перехватит этот БРЯК и функция в VEH (идет до SEH) не найдет бряк - то есть программа отлаживается  
