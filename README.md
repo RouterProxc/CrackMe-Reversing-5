@@ -121,3 +121,11 @@ WINDBG.EXE      → windbg.exe
 
 
 Если будет детект rbx = 1, return rbx  :  rax = 1;
+
+
+Также я отследил вызов MessageBoxW с окном "bok detected" - выполняется отдельная родительская функция обертка для расшифровки строки и дальнейшего вызова MessageBoxW - DETECT
+
+<img width="316" height="103" alt="image" src="https://github.com/user-attachments/assets/b4063cd9-d0af-41df-8bb8-43803dc967b9" />
+
+
+<img width="950" height="152" alt="image" src="https://github.com/user-attachments/assets/153ac3e4-677e-4336-b0f4-79f3b1f651bb" />
