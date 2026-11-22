@@ -129,3 +129,13 @@ WINDBG.EXE      → windbg.exe
 
 
 <img width="950" height="152" alt="image" src="https://github.com/user-attachments/assets/153ac3e4-677e-4336-b0f4-79f3b1f651bb" />
+
+Помимо этих вызовов detect есть и прочие проверки по тому же ряду функций. 
+
+Rdtsc - FIRST, sleep(0xFA = 250), SECOND 
+
+SECOND - FIRST < 100.000 ticks
+
+Для обхода остается патчить и ловить вызов VM 
+
+Также в коде используется GetStdHandle в связке с WriteFile/ReadFile - как хендл файла указана консоль = используется как способ ввода - вывода заместо стандартных cout/cin
